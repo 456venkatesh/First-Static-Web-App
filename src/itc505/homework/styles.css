@@ -1,0 +1,20 @@
+.center {
+  text-align: center;
+}
+#margin{
+	margin-left: 5% ; margin-right:5%;
+}
+body {
+  background-color: #e9e9e6;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+h1{
+font-size: 30px;
+}
+h2{
+font-size: 23px;
+}
+h4{
+font-size:17px;
+}
