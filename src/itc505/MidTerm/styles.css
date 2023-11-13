@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+	background-color: #C0C0C0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#story {
+    margin-bottom: 20px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#endingImage {
+    min-width: 100px; /* Set your minimum width */
+    min-height: 100px; /* Set your minimum height */
+    margin: auto; /* Center the image horizontally */
+}
