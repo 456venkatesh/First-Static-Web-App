@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Holy Grail Layout Example</title>
+</head>
+<body>
 
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+			<li><button onclick="alert('Hello, I am interactive!')">Click me</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+		<h2>Number Guessing Game</h2>
+
+    <p>Guess the number between 1 and 100:</p>
+
+    <input type="number" id="guess" min="1" max="100">
+    <button onclick="checkGuess()">Submit Guess</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+    </main>
+
+    <aside>
+        <h2>Advertisements</h2>
+		<a href="https://www.amazon.com/COOFANDY-Sweater-Lightweight-Knitted-Pullover/dp/B08DFQ3NDR/ref=sr_1_10?crid=6MWTO09A5R8J&keywords=sweaters+for+men&qid=1699816494&sprefix=sweater%2Caps%2C134&sr=8-10" target="_blank">
+            <img src="1.jpg" alt="Amazon Advertisement">
+        </a>
+		<a href="https://www.amazon.com/HP-Flagship-Portable-i3-1125G4-i5-1035G4/dp/B0CJ34JRSZ/ref=sr_1_2_sspa?crid=281TTR2BUBB2S&keywords=laptop&qid=1699816832&sprefix=laptop%2Caps%2C184&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+            <img src="2.jpg" alt="Amazon Advertisement">
+        </a>
+		<a href="https://www.amazon.com/Nike-Control-Trainer-Blacksmoke-Regular/dp/B07RFNMTCH/ref=sr_1_18?crid=AJVJ2NE2WX17&keywords=shoes+for+men&qid=1699817329&sprefix=shoes%2Caps%2C184&sr=8-18" target="_blank">
+            <img src="3.jpg" alt="Amazon Advertisement">
+        </a>
+    </aside>
+
+    <footer>
+		<p>Addendum: Number Guessing Game</p>
+
+<p><b>Description:</b></p>
+
+<p>The JavaScript component in this HTML file aims to implement a Number Guessing Game. The game allows users to input a number, submit their guess, and receive feedback on whether the guess is too high, too low, or correct. The primary goal is to create an interactive and enjoyable user experience.</p>
+
+<p><b>Overview of the Solution:</b></p>
+
+<p><b>Random Number Generation:</b></p>
+
+<p>A random number between 1 and 100 is generated at the beginning of the game using Math.random() and adjusting the range.</p>
+<p><b>User Input Handling:</b></p>
+
+<p>The user's guessed number is retrieved using document.getElementById() and parsed as an integer.</p>
+<p>Checks for valid input (a number between 1 and 100) are implemented, providing alerts for invalid input.</p>
+<p><b>Feedback Display:</b></p>
+
+<p>Feedback messages are displayed based on the comparison between the user's guess and the generated number.</p>
+<p>The textContent property is used to dynamically update the HTML with the result messages.</p>
+<p><b>Difficulties Encountered and Solutions:</b></p>
+
+<p><b>Validating User Input:</b></p>
+
+<p>Difficulty: Ensuring that the user input is a valid number within the specified range.</p>
+<p>Solution: Implemented checks using isNaN() and range validation to handle invalid input gracefully.</p>
+<p><b>Responsive Design:</b></p>
+
+<p>Difficulty: Ensuring a smooth user experience across different devices and screen sizes.</p>
+<p>Solution: Applied responsive design principles and tested the game on various devices to ensure optimal performance.</p>
+<p><b>User Engagement:</b></p>
+
+<p>Difficulty: Enhancing user engagement to make the game enjoyable.</p>
+<p>Solution: Added clear instructions, feedback messages, and an appealing UI to make the game more engaging.</p>
+<p><b>Conclusion:</b></p>
+
+<p>The Number Guessing Game successfully achieves its goal of creating an interactive and enjoyable experience for users. The JavaScript code handles random number generation, user input validation, and dynamic feedback display. By addressing challenges related to user input and design, the game provides a seamless and engaging user interface.</p>
+
+
+
+
+
+    </footer>
+
+</body>
+</html>
