@@ -11,12 +11,15 @@ app.get('/cs212/lab7', (req, res) => {
 });
 
 app.post('/cs212/lab7', (req, res) => {
-    const { pluralNoun, adjective, verb, color, animal } = req.body;
+    const { emotion, adjective, verb, color, celebrity, pluralNoun } = req.body;
+	
+	const loveQuotesMadLib = `Love is a journey filled with ${emotion} and ${adjective} moments. It's the kind of magic that makes our hearts ${verb}. Our love story is painted with the hues of a beautiful ${color} sky, and our bond is as timeless as a beloved ${celebrity}. We cherish the ${pluralNoun} that have enriched our lives.`;
 
-    // Your Mad Lib template
-    const madLib = `Once upon a time, there were ${pluralNoun} living in a ${adjective} world. They loved to ${verb} and were known for their ${color} fur. One day, a wise ${animal} came to visit.`;
+    res.send(loveQuotesMadLib);
+});
 
-    res.send(madLib);
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
 });
 
 app.listen(port, () => {
