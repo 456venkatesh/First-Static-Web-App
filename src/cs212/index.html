@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lights Out</title>
+</head>
+<body>
+<div id="message"></div>
+<div class="board" id="board"></div>
+
+<script src="script.js"></script>
+<footer>
+<p><b>Addendum</b></p>
+<p>In developing the "Lights Out" game, I aimed to create a visually appealing and interactive experience while maintaining simplicity and usability. The design choices were influenced by a desire to evoke a night-sky ambiance, reflected in the background color and the contrasting colors of the cells. The chosen color scheme of dark background and light cells contributes to an immersive gaming atmosphere, while the subtle transition effect adds a touch of elegance to the user interactions.</p>
+
+<p>The decision to use an external stylesheet (styles.css) separates the presentation concerns, making the code more modular and easier to maintain. This approach facilitates the organization of styling rules, enhancing the readability of both the HTML and JavaScript files. The grid layout for the game board was implemented with CSS Grid, providing a clean and structured arrangement of cells.</p>
+
+<p>One challenge encountered during development was creating a random but solvable configuration for the initial state of the board. Ensuring that the puzzle is always solvable required careful consideration. The solution involved toggling cells randomly, keeping track of the changes made, and verifying that the resulting configuration is solvable. This process ensures that the player is presented with a challenging yet achievable puzzle each time.</p>
+
+<p>The use of a centralized message element (messageDiv) provides a clean way to communicate information to the player, such as the game title and win alerts. The win condition is determined by checking if all cells are turned off after a move, triggering a congratulatory alert and initiating the board reset for a new game.</p>
+
+<p>The overall development process emphasized clean code practices, separation of concerns, and a user-centric design approach. By overcoming challenges related to solvability and organizing the code effectively, insights were gained into the importance of thoughtful design choices and maintaining a balance between aesthetics and functionality in creating an engaging web-based game.</p>
+</footer>
+</body>
+</html>
